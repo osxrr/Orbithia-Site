@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Orbithia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/brand.css">
+</head>
+<body>
+<header class="nav"><div class="container nav__inner">
+  <a href="index.html" class="brand"><img src="assets/logo-orbithia.png" class="brand__logo" alt="Orbithia"></a>
+  <nav class="nav__links">
+    <a class="active" href="about.html">About</a><a href="nfts.html">NFTs</a><a href="gameplay.html">Gameplay</a><a href="faq.html">FAQ</a><a class="pill" href="whitepaper.html">Whitepaper</a>
+  </nav>
+</div></header>
+
+<section class="section">
+  <div class="container">
+    <h1>About Orbithia</h1>
+    <p>Orbithia is a Web3 strategy RPG set among drifting continents and fractured moons. Your airship is your mobile base; heroes are your crew; Moon Fragments power progression.</p>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container grid grid--2">
+    <div>
+      <h2 class="kicker">Identity & Tone</h2>
+      <p>Visuals blend skyfaring fantasy with worn metals. The palette uses <strong>Amber Glow</strong> for accents, <strong>Starlit Teal</strong> for cool depth, and <strong>Midnight Plum</strong> for mood.</p>
+      <ul class="swatches">
+        <li style="--c:#C7C9CC">Moonstone</li><li style="--c:#A05C44">Rusted Copper</li>
+        <li style="--c:#7B8F69">Lichen Green</li><li style="--c:#E1D9C6">Pale Sand</li>
+        <li style="--c:#4F6E78">Starlit Teal</li><li style="--c:#D9A441">Amber Glow</li>
+        <li style="--c:#C78686">Faded Rose</li><li style="--c:#5A3E50">Midnight Plum</li>
+      </ul>
+    </div>
+    <img src="assets/palette-orbithia.png" alt="Palette" class="img-rounded">
+  </div>
+</section>
+
+<footer class="footer"><div class="container footer__inner">
+  <div class="footer__brand"><img src="assets/logo-orbithia.png" alt=""></div><p>© 2025 Orbithia</p>
+</div></footer>
+</body></html>
