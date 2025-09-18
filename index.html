@@ -6,12 +6,12 @@
   <title>Orbithia — Web3 Airship RPG</title>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/brand.css" />
-  <link rel="icon" href="assets/favicon.png" />
 </head>
 <body>
+  <!-- NAV -->
   <header class="nav">
     <div class="container nav__inner">
-      <a href="index.html" class="brand"><img src="assets/logo-orbithia.png" class="brand__logo" alt="Orbithia"></a>
+      <a href="index.html" class="brand__wordmark">ORB<span class="brand__spark"></span>THIA</a>
       <nav class="nav__links">
         <a href="about.html">About</a>
         <a href="nfts.html">NFTs</a>
@@ -22,26 +22,56 @@
     </div>
   </header>
 
+  <!-- HERO -->
   <section class="hero">
     <div class="hero__bg"></div>
     <div class="container hero__inner">
-      <img src="assets/logo-orbithia.png" class="hero__logo" alt="Orbithia logo" />
       <h1 class="hero__title">Your Airship is Your Home</h1>
       <p class="hero__tag">Recruit heroes, stock supplies, and chart risky routes across shifting continents.</p>
       <div class="hero__cta">
         <a class="btn btn--primary" href="nfts.html">Explore the Game</a>
         <a class="btn" href="whitepaper.html">Read Whitepaper</a>
       </div>
-      <img class="hero__art" src="assets/ref-character-raiders.jpg" alt="Orbithia concept art" />
+
+      <!-- Inline SVG “hero art” (uses your palette) -->
+      <svg class="hero__art" viewBox="0 0 1200 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Orbithia concept">
+        <defs>
+          <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%"  stop-color="#D9A441"/>
+            <stop offset="100%" stop-color="#C78686"/>
+          </linearGradient>
+          <linearGradient id="g2" x1="1" y1="0" x2="0" y2="1">
+            <stop offset="0%"  stop-color="#4F6E78"/>
+            <stop offset="100%" stop-color="#5A3E50"/>
+          </linearGradient>
+        </defs>
+        <rect width="1200" height="540" fill="#0F1217"/>
+        <!-- “Sky rings” -->
+        <circle cx="220" cy="120" r="180" fill="url(#g1)" opacity=".18"/>
+        <circle cx="1000" cy="80" r="220" fill="url(#g2)" opacity=".18"/>
+        <!-- Stylized airship silhouette -->
+        <g transform="translate(150,260)">
+          <ellipse cx="380" cy="60" rx="320" ry="80" fill="#1A2028" stroke="#2b3340" stroke-width="4"/>
+          <rect x="260" y="-10" width="240" height="60" rx="12" fill="#1F2A33" stroke="#2b3340" stroke-width="4"/>
+          <polygon points="520,20 600,60 520,100" fill="#1F2A33" stroke="#2b3340" stroke-width="4"/>
+          <line x1="220" y1="60" x2="540" y2="60" stroke="url(#g1)" stroke-width="6"/>
+          <circle cx="320" cy="100" r="32" fill="#0E0F12" stroke="#2b3340" stroke-width="4"/>
+          <circle cx="440" cy="100" r="32" fill="#0E0F12" stroke="#2b3340" stroke-width="4"/>
+        </g>
+        <!-- Glints -->
+        <path d="M1040,360 q-40,50 -100,40" stroke="url(#g1)" stroke-width="6" fill="none" opacity=".6"/>
+        <path d="M100,420 q60,-20 120,0" stroke="url(#g2)" stroke-width="6" fill="none" opacity=".6"/>
+      </svg>
     </div>
   </section>
 
+  <!-- Quick Start -->
   <section class="section section--alt">
     <div class="container center">
       <h2 class="kicker">Quick Start</h2>
       <div class="grid grid--3">
         <div class="card">
-          <div class="ph ph--img" style="background-image:url('assets/ref-character-raiders.jpg')"></div>
+          <div class="ph ph--img"></div>
           <h3>Get an Airship</h3>
           <p>Main collection of 10,000. Your base with 4 hero slots and upgradable capacity.</p>
         </div>
@@ -61,7 +91,7 @@
 
   <footer class="footer">
     <div class="container footer__inner">
-      <div class="footer__brand"><img src="assets/logo-orbithia.png" alt="Orbithia" /></div>
+      <div class="brand__wordmark">ORB<span class="brand__spark"></span>THIA</div>
       <p>© 2025 Orbithia</p>
     </div>
   </footer>
