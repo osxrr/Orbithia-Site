@@ -1,0 +1,28 @@
+/* Orbithia base styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #0b0c10;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: #1f2833;
+}
+
+h1, h2 {
+  color: #66fcf1;
+}
+
+a {
+  color: #45a29e;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
