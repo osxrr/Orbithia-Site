@@ -1,28 +1,100 @@
-/* Orbithia base styles */
+/* General reset */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
   background: #0b0c10;
   color: #ffffff;
-  line-height: 1.6;
 }
 
-header {
-  text-align: center;
-  padding: 40px 20px;
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+}
+
+/* Header */
+.site-header {
   background: #1f2833;
+  padding: 20px 0;
+  border-bottom: 2px solid #45a29e;
 }
 
-h1, h2 {
+.site-header .logo {
+  margin: 0;
+  color: #66fcf1;
+  font-size: 1.8em;
+  float: left;
+}
+
+.nav-links {
+  list-style: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #c5c6c7;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
   color: #66fcf1;
 }
 
-a {
-  color: #45a29e;
-  text-decoration: none;
+/* Hero */
+.hero {
+  background: linear-gradient(to right, #0b0c10, #1f2833);
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
 }
 
-a:hover {
-  text-decoration: underline;
+.hero h2 {
+  font-size: 2.5em;
+  color: #66fcf1;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #45a29e;
+  color: #0b0c10;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.hero .btn:hover {
+  background: #66fcf1;
+}
+
+/* Sections */
+.content-section {
+  padding: 60px 20px;
+}
+
+.content-section.alt {
+  background: #1f2833;
+}
+
+/* Footer */
+.site-footer {
+  background: #1f2833;
+  color: #c5c6c7;
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid #45a29e;
 }
