@@ -4,125 +4,177 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Orbithia — Web3 Airship RPG</title>
-  <link rel="stylesheet" href="assets/wireframe.css" />
+
+  <!-- Brand Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/brand.css" />
+  <link rel="icon" href="assets/favicon.png" />
+
+  <meta name="description" content="Your airship is your home. Recruit heroes, explore dungeons and gather Moon Fragments in Orbithia, a Web3 airship RPG." />
+  <meta property="og:title" content="Orbithia — Web3 Airship RPG" />
+  <meta property="og:description" content="Explore shifting continents, recruit heroes, and conquer dungeons." />
+  <meta property="og:image" content="assets/ref-character-raiders.jpg" />
 </head>
 <body>
-  <!-- Navigation -->
+  <!-- NAV -->
   <header class="nav">
     <div class="container nav__inner">
-      <div class="logo block-sm"></div>
+      <a href="#" class="brand">
+        <img src="assets/logo-orbithia.png" alt="Orbithia" class="brand__logo" />
+      </a>
       <nav class="nav__links">
-        <a href="#about" class="pill">About</a>
-        <a href="#nfts" class="pill">NFTs</a>
-        <a href="#gameplay" class="pill">Gameplay</a>
-        <a href="#faq" class="pill">FAQ</a>
-        <a href="whitepaper.html" class="pill">Whitepaper</a>
+        <a href="#about">About</a>
+        <a href="#nfts">NFTs</a>
+        <a href="#gameplay">Gameplay</a>
+        <a href="#faq">FAQ</a>
+        <a class="pill" href="whitepaper.html">Whitepaper</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section id="hero" class="section hero">
-    <div class="container stack center">
-      <div class="block-lg"></div>
-      <div class="line title w-70"></div>
-      <div class="line w-50"></div>
-      <div class="btn-row">
-        <div class="btn">Explore the Game</div>
-        <div class="btn btn-outline">Read Whitepaper</div>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="container hero__inner">
+      <img src="assets/logo-orbithia.png" class="hero__logo" alt="Orbithia logo" />
+      <h1 class="hero__title">Your Airship is Your Home</h1>
+      <p class="hero__tag">Recruit heroes, stock supplies, and chart risky routes across shifting continents.</p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#nfts">Explore the Game</a>
+        <a class="btn" href="whitepaper.html">Read Whitepaper</a>
       </div>
+      <img class="hero__art" src="assets/ref-character-raiders.jpg" alt="Orbithia concept" />
     </div>
   </section>
 
-  <!-- Steps -->
+  <!-- HOW IT WORKS -->
   <section id="about" class="section">
     <div class="container">
-      <div class="line title w-50"></div>
-      <div class="grid-3 cards">
+      <h2 class="kicker">Start Playing</h2>
+      <div class="grid grid--3">
         <div class="card">
-          <div class="block-md"></div>
-          <div class="line w-70"></div>
-          <div class="line w-50"></div>
+          <div class="ph ph--img" style="--ph:url('assets/ref-character-raiders.jpg')"></div>
+          <h3>Get an Airship</h3>
+          <p>Main collection of 10,000. Your base with 4 hero slots and upgradable capacity.</p>
         </div>
         <div class="card">
-          <div class="block-md"></div>
-          <div class="line w-70"></div>
-          <div class="line w-50"></div>
+          <div class="ph ph--img"></div>
+          <h3>Recruit Heroes</h3>
+          <p>Collectable characters with rarity-gated growth to Level 5. Equip and specialize.</p>
         </div>
         <div class="card">
-          <div class="block-md"></div>
-          <div class="line w-70"></div>
-          <div class="line w-50"></div>
+          <div class="ph ph--img"></div>
+          <h3>Explore & Earn</h3>
+          <p>Plan fuel, storage and buffs. Clear dungeons for loot and <strong>Moon Fragments</strong>.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- NFT Collections -->
-  <section id="nfts" class="section alt">
+  <!-- NFT COLLECTIONS -->
+  <section id="nfts" class="section section--alt">
     <div class="container">
-      <div class="line title w-40"></div>
-      <div class="grid-2">
-        <div class="stack">
-          <div class="block-md"></div>
-          <div class="line w-80"></div>
-          <div class="line w-60"></div>
+      <h2 class="kicker">NFT Collections</h2>
+      <div class="grid grid--2">
+        <div class="feature">
+          <div class="ph ph--wide"></div>
+          <h3>Airships (10,000)</h3>
+          <ul class="list">
+            <li>Base with 4 character slots (expandable).</li>
+            <li>Key metrics: Fuel, Storage, Slots.</li>
+            <li>Rarity affects efficiency & extra slots.</li>
+          </ul>
         </div>
-        <div class="stack">
-          <div class="block-md"></div>
-          <div class="line w-80"></div>
-          <div class="line w-60"></div>
+        <div class="feature">
+          <div class="ph ph--wide"></div>
+          <h3>Genesis Heroes (99)</h3>
+          <ul class="list">
+            <li>Exclusive heroes with higher growth ceilings.</li>
+            <li>Stats: STR, MGK, HP, AGI, SPD.</li>
+            <li>2 equipment slots (+HP/STR etc.).</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Gameplay -->
+  <!-- GAMEPLAY -->
   <section id="gameplay" class="section">
-    <div class="container grid-2">
-      <div class="stack">
-        <div class="line title"></div>
-        <div class="line w-90"></div>
-        <div class="line w-70"></div>
-        <div class="line w-50"></div>
+    <div class="container grid grid--2">
+      <div>
+        <h2 class="kicker">Gameplay Loop</h2>
+        <p>From the map, choose destinations. The system estimates travel/clear time and success odds based on your loadout.</p>
+        <ul class="bullets">
+          <li><strong>Plan:</strong> Pick heroes, potions, one-time buff scrolls.</li>
+          <li><strong>Run:</strong> Tackle dungeons, face events & hazards.</li>
+          <li><strong>Progress:</strong> Spend Moon Fragments to upgrade airships & heroes.</li>
+        </ul>
       </div>
-      <div class="block-lg"></div>
+      <div class="ph ph--tall"></div>
     </div>
   </section>
 
-  <!-- Dynamic Web3 Placeholders -->
-  <section class="section alt">
-    <div class="container stack center">
-      <div class="line title w-60"></div>
-      <div class="btn-row">
-        <div class="btn">[ Connect Wallet ]</div>
-        <div class="btn btn-outline">[ Mint Airship NFT ]</div>
+  <!-- WEB3 PLACEHOLDERS -->
+  <section class="section section--alt">
+    <div class="container center">
+      <h2 class="kicker">Web3 Actions (Placeholders)</h2>
+      <div class="cta-row">
+        <a class="btn btn--ghost">[ Connect Wallet ]</a>
+        <a class="btn btn--ghost">[ Mint Airship NFT ]</a>
       </div>
-      <div class="block-lg">[ Player Inventory / API Stats ]</div>
+      <div class="ph ph--wide label">[ Player Inventory / API Stats ]</div>
+    </div>
+  </section>
+
+  <!-- ABOUT BRAND / PALETTE -->
+  <section class="section">
+    <div class="container grid grid--2">
+      <div>
+        <h2 class="kicker">Orbithia Identity</h2>
+        <p>Palette pulls from skyfaring fantasy and worn metals. Typography pairs a strong display face with a modern sans for UI.</p>
+        <ul class="swatches">
+          <li style="--c:#C7C9CC">Moonstone<br>#C7C9CC</li>
+          <li style="--c:#A05C44">Rusted Copper<br>#A05C44</li>
+          <li style="--c:#7B8F69">Lichen Green<br>#7B8F69</li>
+          <li style="--c:#E1D9C6">Pale Sand<br>#E1D9C6</li>
+          <li style="--c:#4F6E78">Starlit Teal<br>#4F6E78</li>
+          <li style="--c:#D9A441">Amber Glow<br>#D9A441</li>
+          <li style="--c:#C78686">Faded Rose<br>#C78686</li>
+          <li style="--c:#5A3E50">Midnight Plum<br>#5A3E50</li>
+        </ul>
+      </div>
+      <img src="assets/palette-orbithia.png" alt="Orbithia palette" class="img-rounded">
     </div>
   </section>
 
   <!-- FAQ -->
-  <section id="faq" class="section">
+  <section id="faq" class="section section--alt">
     <div class="container">
-      <div class="line title w-40"></div>
-      <div class="stack">
-        <div class="line w-90"></div>
-        <div class="line w-80"></div>
-        <div class="line w-70"></div>
-        <div class="gap"></div>
-        <div class="line w-90"></div>
-        <div class="line w-80"></div>
-      </div>
+      <h2 class="kicker">FAQ</h2>
+      <details class="faq">
+        <summary>Do I need an NFT to start?</summary>
+        <p>New players can enter with a basic airship; collecting heroes accelerates progression.</p>
+      </details>
+      <details class="faq">
+        <summary>What are Moon Fragments?</summary>
+        <p>Premium currency earned via dungeons, used to upgrade ships and heroes.</p>
+      </details>
+      <details class="faq">
+        <summary>How do stats & levels work?</summary>
+        <p>Heroes cap at Level 5; rarity gates total growth across STR, MGK, HP, AGI, SPD.</p>
+      </details>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer class="footer">
-    <div class="container grid-3">
-      <div class="block-sm"></div>
-      <div class="line w-70"></div>
-      <div class="line w-50"></div>
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="assets/logo-orbithia.png" alt="Orbithia" />
+      </div>
+      <p>© 2025 Orbithia</p>
     </div>
   </footer>
 </body>
